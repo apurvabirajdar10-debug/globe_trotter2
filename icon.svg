@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="needle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <!-- Outer ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#ffffff" stroke-width="12" opacity="0.3" />
+  <circle cx="256" cy="256" r="140" fill="none" stroke="#ffffff" stroke-width="4" stroke-dasharray="12 12" opacity="0.4" />
+  <!-- Compass star marks -->
+  <polygon points="256,76 266,106 256,96 246,106" fill="#ffffff" />
+  <polygon points="256,436 266,406 256,416 246,406" fill="#ffffff" opacity="0.6" />
+  <polygon points="76,256 106,246 96,256 106,266" fill="#ffffff" opacity="0.6" />
+  <polygon points="436,256 406,246 416,256 406,266" fill="#ffffff" opacity="0.6" />
+  <!-- Compass Needle -->
+  <polygon points="256,120 286,256 256,236 226,256" fill="url(#needle)" />
+  <polygon points="256,392 286,256 256,276 226,256" fill="#ffffff" opacity="0.9" />
+  <!-- Center Pivot -->
+  <circle cx="256" cy="256" r="24" fill="#0f172a" stroke="#ffffff" stroke-width="8" />
+  <circle cx="256" cy="256" r="8" fill="#f59e0b" />
+</svg>
